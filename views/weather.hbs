@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- <link rel="stylesheet" href="./css/style.css"> --}}
+        <link rel="stylesheet" href="css/output.css">
+
+    <title>Document</title>
+ 
+ <script >
+ 
+ </script>
+</head>
+<body>
+     <!-- navbar -->
+     <div
+     class="w-screen max-w-screen-2xl mx-auto flex justify-between items-center h-20 px-8 sticky top-0  bg-blue-500 text-white"
+   >
+     <img
+       src="images/logo_white.png"
+       alt=""
+       class="object-cover max-w-[8rem]"
+     />
+     <div class="flex items-center justify-center gap-4 text-lg">
+       <a href="/">Home</a><a href="/weather">Weather</a><a href="">About</a>
+     </div>
+   </div>
+   <!-- end navbar -->
+   <!-- Main card -->
+   <div 
+   id="div1" class=" w-full h-auto my-[4rem] max-w-screen-2xl mx-auto flex flex-col justify-center items-center  ">
+    <div class="w-[50%] p-4  h-auto flex flex-col  items-center rounded-2xl  bg-blue-600 ">
+        <input id="city_name" autocomplete="off" type="text" class="rounded-3xl ring-1 ring-black w-full h-[3rem] px-4 " placeholder="Write the  name of city">
+        <button onclick="btn_submit(Event)" class="bg-black w-[4rem] m-8 rounded-xl text-white">Search </button>
+        <div class="flex self-start w-full justify-between"> <p id="city_text" class="font-sans text-3xl ">city </p> <p id="city_temperature" class="font-sans text-3xl ">temp  </p> <span>&deg;C</span> </div>
+    </div>
+   </div>
+   <!-- end Main card -->
+    <!-- footer -->
+    <div 
+    class="w-full flex items-center justify-around px-8    max-w-screen-2xl mx-auto bg-blue-500 h-[20rem] ">
+        <img
+        src="images/logo_white.png"
+        alt=""
+        class="object-cover max-w-[8rem]"
+      />
+      <div class="bg-black w-[.05rem] h-[7rem] "></div>
+      <div>
+        <p>created the website just to get around  express js</p>
+        <p class="text-end">-RUSHI RGK</p>
+      </div>
+
+    </div>
+    <!-- end footer -->
+<script src="js/main.js"></script>
+    
+</body>
+</html>
